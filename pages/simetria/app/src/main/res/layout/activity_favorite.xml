@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="319dp"
+        android:layout_height="287dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133"
+        app:srcCompat="@drawable/favorite" />
+
+    <TextView
+        android:id="@+id/lblFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="291dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="72dp"
+        android:text="Esta sem tempo ou dinheiro agora mas quer ajudar em um caso especifico?  Favorite e o caso vai ficar salvo no seu  perfil. "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="349dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918"
+        app:srcCompat="@drawable/bolinhaquar" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="64dp"
+        android:layout_height="54dp"
+        android:onClick="chamarActivityHomeeee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        app:srcCompat="@drawable/btnhomee" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:onClick="chamarActivitySobreeee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        app:srcCompat="@drawable/info" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="52dp"
+        android:layout_height="45dp"
+        android:onClick="chamarActivityAdotee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269"
+        app:srcCompat="@drawable/btnvoltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

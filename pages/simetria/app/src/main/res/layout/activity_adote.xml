@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdoteActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="271dp"
+        android:layout_height="290dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125"
+        app:srcCompat="@drawable/adote" />
+
+    <TextView
+        android:id="@+id/lblAdote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adote"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <TextView
+        android:id="@+id/txtAdote"
+        android:layout_width="308dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="4dp"
+        android:text="Aqui você tem a opção de ser o doador efetivo de alguém e até pagar um  curso para o  aluno que  você adotar."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="350dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898"
+        app:srcCompat="@drawable/bolinhater" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:onClick="chamarActivityHomeee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        app:srcCompat="@drawable/btnhomee" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="328dp"
+        android:onClick="chamarActivitySobreee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955"
+        app:srcCompat="@drawable/info" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:onClick="chamarActivityRecebaa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.282"
+        app:srcCompat="@drawable/btnvoltar" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="43dp"
+        android:layout_height="50dp"
+        android:onClick="chamarActivityFavorite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281"
+        app:srcCompat="@drawable/brnproximo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fundoindex"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:text="Balaio de Lenha"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTitulo"
+                android:text="Restaurante"
+                android:textStyle="bold"
+                android:textColor="#8E0109"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/lblicone"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:onClick="chamarlogActivity"
+                android:src="@drawable/balaio"></ImageView>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="4"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#E8FFFFFF"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="12dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/cafeCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="201dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/lblcafe"
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/breakfast" />
+
+                        <TextView
+                            android:id="@+id/txtCafe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Café da Manhã"
+                            android:textAlignment="center"
+                            android:textColor="#756F6F"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#E8FFFFFF"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="12dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/almocoCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="201dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/lblAlmoco"
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/lunch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Almoço"
+                            android:textAlignment="center"
+                            android:textColor="#756F6F"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#E8FFFFFF"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="12dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/jantaCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="201dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/lblJanta"
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/dinner" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Jantar"
+                            android:textAlignment="center"
+                            android:textColor="#756F6F"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#E8FFFFFF"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="12dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/SobremesaCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="201dp"
+                        android:gravity="center"
+                        android:onClick="chamarActivity"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/lblSobremesa"
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:onClick="chamarActivity"
+                            android:src="@drawable/cake" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Sobremesas"
+                            android:textAlignment="center"
+                            android:textColor="#756F6F"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#E8FFFFFF"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="12dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/lancheCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="201dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/lblLanche"
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/burger" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Lanches"
+                            android:textAlignment="center"
+                            android:textColor="#756F6F"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#E8FFFFFF"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="12dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/DelivereCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="201dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/lblDelivere"
+                            android:layout_width="120dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/delivery" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Delivery"
+                            android:textAlignment="center"
+                            android:textColor="#756F6F"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
+
